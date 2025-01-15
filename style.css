@@ -1,0 +1,123 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+:root{
+    --Red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+    --Very-dark-blue: hsl(234, 12%, 34%);
+    --Grayish-blue: hsl(229, 6%, 66%);
+    --Very-light-gray: hsl(0, 0%, 98%);
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    padding: 30px;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    color:var(--Very-dark-blue);
+    max-width: 550px; /* 550px;*/
+    padding: 30px;
+    text-align: center;
+}
+
+.header-upper-text{
+    font-weight: 200;
+    font-size: 31.8px;
+    color:var(--Very-dark-blue)
+}
+
+.header-lower-text{
+    font-weight: 500;
+    font-size: 32px;
+}
+
+.header-description{
+    color:var(--Grayish-blue);
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+
+.card{
+    display: flex;
+    flex-direction: column;
+    max-width: 380px;
+    border-radius: 8px;
+    padding: 30px 20px;
+    align-self: center;
+    box-shadow: 0 2px 10px 5px rgba(0, 0, 0, 0.089);
+}
+
+.middle-cards{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.card-header{
+    font-weight: 600;
+    color: var(--Very-dark-blue);
+    font-size: 20px;
+}
+
+.card-text{
+    color:var(--Grayish-blue);
+}
+
+img{
+    width: 50px;
+    height: 50px;
+    align-self: flex-end;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+#supervisor-card{
+    border-top: 4px solid var(--Cyan);
+}
+
+#team-builder-card {
+    border-top: 4px solid var(--Red);
+}
+
+#karma-card{
+    border-top: 4px solid var(--Orange);
+}
+
+#calculator-card{
+    border-top: 4px solid var(--Blue);
+}
+
+@media screen and (max-width: 600px){
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+
+    header{
+        padding: 20px 0;
+    }
+    .header-upper-text{
+        font-size: 21.8px;
+    }
+    
+    .header-lower-text{
+        font-size: 22px;
+    }
+}
+
