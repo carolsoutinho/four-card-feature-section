@@ -18,6 +18,10 @@ body{
     font-family: 'Poppins', sans-serif;
     padding: 30px;
     background-color: var(--Very-light-gray);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 header{
